@@ -1,5 +1,4 @@
 .vscode
 .env
 *.txt
-DriveDirect-CMD_1.2.py
 test.py
