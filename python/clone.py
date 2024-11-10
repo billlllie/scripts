@@ -2,10 +2,10 @@ import socket,random,os
 
 # execDir = "/root/AutoRclone/rclone_sa_magic.py"
 # workDir = "/root/AutoRclone"
-workDir = 'C:\\Users\\lzh\\Desktop\\tmp\\AutoRclone-master\\'
-execDir = 'C:\\Users\\lzh\\Desktop\\tmp\\AutoRclone-master\\rclone_sa_magic.py'
 # beginDir = "/root/scripts/begin"
-beginDir = "C:\\Users\\lzh\\Desktop\\tmp\\AutoRclone-master\\begin"
+workDir = '<work dir>'
+execDir = '<rclone_sa_magic.py dir>'
+beginDir = "<being dir>"
 
 def isInuse(ipList, port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
