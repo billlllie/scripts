@@ -1,0 +1,16 @@
+services:
+  EFT-spt-server:
+    image: local/eft-spt-server
+    build:
+      dockerfile: scripts/Dockerfile
+      context: ../
+    ports:
+      - <port>:6969
+    volumes:
+      - ../config/user:/app/server/bin/user
+      - ../config/SPT_Data:/app/server/bin/SPT_Data
+      - ../config/BepInEx:/app/server/bin/BepInEx
+    # debug
+    #stdin_open: true
+    #tty: true
+    #entrypoint: /bin/bash
